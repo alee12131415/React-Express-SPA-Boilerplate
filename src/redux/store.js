@@ -5,6 +5,6 @@ import middleware from './middlewares'
 
 const initialState = sessionStorage.getItem('state') ? JSON.parse(window.sessionStorage.getItem('state')) : state
 
-let store = middleware(createStore)(reducers, initialState)
+let store = createStore(reducers, initialState, middleware)
 
 export default store

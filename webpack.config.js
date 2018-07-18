@@ -17,6 +17,10 @@ module.exports = {
                 options: {
                     babelrc: true
                 }
+            },
+            {
+                loader: ['style-loader', 'css-loader'],
+                test: /\.css$/
             }
         ]
     },

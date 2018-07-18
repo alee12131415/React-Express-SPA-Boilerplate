@@ -1,5 +1,6 @@
 const types = {
-    UPDATE_TITLE: 'UPDATE_TITLE'
+    UPDATE_TITLE: 'UPDATE_TITLE',
+    UPDATE_SUBTITLE: 'UPDATE_SUBTITLE'
 }
 
 export const updateTitle = (title) => {
