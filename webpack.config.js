@@ -26,7 +26,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'tictacturing',
+            title: 'React Express SPA Boilerplate',
             filename: './index.html',
             template: './src/index.html'
         })
