@@ -11,15 +11,19 @@ module.exports = {
     module: {
         rules: [
             {
-                loader: 'babel-loader',
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            babelrc: true
+                        }
+                    }
+                ],
                 test: /\.(js|jsx)$/,
                 include: path.resolve(__dirname, 'src'),
-                options: {
-                    babelrc: true
-                }
             },
             {
-                loader: ['style-loader', 'css-loader'],
+                use: ['style-loader', 'css-loader'],
                 test: /\.css$/
             }
         ]

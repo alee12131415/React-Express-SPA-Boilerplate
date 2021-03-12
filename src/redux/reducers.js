@@ -1,5 +1,7 @@
 import {combineReducers} from 'redux'
-import {UPDATE_TITLE as updateTitle, UPDATE_SUBTITLE as updateSub} from './actions'
+import actions from './actions' // do not destructure default imports
+
+const {UPDATE_TITLE: updateTitle, UPDATE_SUBTITLE: updateSub} = actions
 
 const title = (state = 'title', action) => {
     switch (action.type) {
